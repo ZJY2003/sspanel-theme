@@ -1,0 +1,356 @@
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio no-localstorage no-sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- App Favicon -->
+        <link href="assets/images/favicon.ico" rel="shortcut icon">
+
+        <!-- App title -->
+        <title>THE.SSR</title>
+
+        <!--Morris Chart CSS -->
+		<link href="assets/plugins/morris/morris.css" rel="stylesheet">
+
+        <!-- Switchery css -->
+        <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
+
+        <!-- App CSS -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="assets/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="assets/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <!-- Modernizr js -->
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="https://cdn.bootcss.com/morris.js/0.5.1/morris.js"></script>
+        <script src="https://cdn.bootcss.com/morris.js/0.5.1/morris.min.js"></script>
+
+		<script>
+
+        </script>
+
+    </head>
+
+
+    <body class="fixed-left widescreen">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a class="logo" href="index.html">
+                        <i class="zmdi zmdi-group-work icon-c-logo"></i>
+                        <span>THE.SSR</span></a>
+                </div>
+
+
+                <nav class="navbar navbar-custom">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="zmdi zmdi-menu"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item hidden-mobile">
+
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav pull-right">
+
+                        <li class="nav-item dropdown notification-list">
+                            <a class="nav-link waves-effect waves-light right-bar-toggle" href="javascript:void(0);">
+                                <i class="zmdi zmdi-notifications noti-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light nav-user" role="button" aria-expanded="false" aria-haspopup="false" href="#" data-toggle="dropdown">
+                                <img class="img-circle" alt="user" src="assets/images/users/avatar-1.jpg">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-arrow profile-dropdown " aria-labelledby="Preview">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="text-overflow"><small>欢迎！ Tony Zou</small> </h5>
+                                </div>
+
+                                <!-- item-->
+                                <a class="dropdown-item notify-item" href="javascript:void(0);">
+                                    <i class="zmdi zmdi-account-circle"></i> <span>个人资料</span>
+                                </a>
+
+                                <!-- item-->
+                                <a class="dropdown-item notify-item" href="javascript:void(0);">
+                                    <i class="zmdi zmdi-power"></i> <span>登出</span>
+                                </a>    
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimScrollDiv" style="width: auto; height: 682px; overflow: hidden; position: relative;"><div class="sidebar-inner slimscrollleft" style="width: auto; height: 682px; overflow: hidden;">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <ul>
+                        	<li class="text-muted menu-title">菜单</li>
+
+                            <li class="has_sub">
+                                <a class="waves-effect" href="index.html"><i class="zmdi zmdi-view-dashboard"></i><span> 控制面板 </span> </a>
+                            </li>
+
+                            <li class="text-muted menu-title">我的</li>
+
+                            <li class="has_sub">
+                                <a class="waves-effect" href="profile.html"><i class="zmdi zmdi-info active"></i><span> 账户信息 </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="edit.html"><i class="zmdi zmdi-edit"></i><span> 资料编辑 </span> </a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a class="waves-effect" href="invite.html"><i class="zmdi zmdi-ticket-star"></i><span> 邀请码 </span> </a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a class="waves-effect  active subdrop" href="#"><i class="zmdi zmdi-notifications"></i><span> 公告 </span> </a>
+                            </li>
+
+
+                            <li class="text-muted menu-title">使用</li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-dns"></i><span> 节点列表 </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-swap"></i><span> 中转规则 </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-time"></i><span> 流量记录 </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-hourglass-alt"></i><span> 节点测速 </span> </a>
+                            </li>
+
+                            <li class="text-muted menu-title">审计</li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-shield-security"></i><span> 审计规则 </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-alert-triangle"></i><span> 审计记录 </span> </a>
+                            </li>
+
+                            <li class="text-muted menu-title">帮助</li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-assignment-o"></i><span> 工单系统 </span> </a>
+                            </li>
+
+                            <li class="text-muted menu-title">交易</li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-shopping-cart"></i><span> 商店 </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-shopping-basket"></i><span> 购买记录 </span> </a>
+                            </li>
+                            <li class="has_sub">
+                                <a class="waves-effect" href="#"><i class="zmdi zmdi-money"></i><span> 充值 </span> </a>
+                            </li>
+
+
+
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); border-radius: 7px; top: 0px; width: 5px; height: 482.49px; right: 1px; display: none; visibility: visible; position: absolute; z-index: 99; opacity: 0.4;"></div><div class="slimScrollRail" style="background: rgb(51, 51, 51); border-radius: 7px; top: 0px; width: 5px; height: 100%; right: 1px; display: none; position: absolute; z-index: 90; opacity: 0.2;"></div></div>
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container">
+
+                        <div class="row">
+							<div class="col-xs-12">
+								<div class="page-title-box">
+                                    <h4 class="page-title">管理面板</h4>
+                                    <ol class="breadcrumb p-0">
+                                        <li>
+                                            <a href="#">THE.SSR</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html">管理面板</a>
+                                        </li>
+                                        <li class="active">公告</li>
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                </div>
+							</div>
+						</div>
+                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="card-box tilebox-one">
+                                    <i class="pull-xs-right text-muted"></i>
+                                    <h4 class="text-muted text-uppercase m-b-20">最新公告</h4>
+                                    <h5>发布日期：2017/10/01</h5>
+                                    <ol>
+<li>填写调查问卷，即可获得本站十元充值码。传送门<a href="https://www.wenjuan.in/s/jAjAry/">https://www.wenjuan.in/s/jAjAry/</a></li><li>Google Cloud新线路上线，超低延迟。</li><li>本站QQ群：661967602</li><li>邀请码现已发放，可以进入邀请码面板生成邀请链接，邀请者可以获取20%的提成</li><li>Shadowrocket现已提供下载，可进入ALL-IN-ONE的IOS面板获取App ID进入商店搜索下载。</li></ol>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <!-- end row -->
+                    </div> <!-- container -->
+                </div> <!-- content -->
+            </div>
+            <!-- End content-page -->
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar">
+                <div tabindex="5000" class="nicescroll" style="outline: invert; overflow-x: hidden; overflow-y: hidden;">
+                    <ul class="nav nav-tabs text-xs-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-expanded="false" href="#home-2" data-toggle="tab">
+                                Activity
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home-2">
+                            <div class="timeline-2">
+                                <div class="time-item">
+                                    <div class="item-info">
+                                        <small class="text-muted">5 minutes ago</small>
+                                        <p><strong><a class="text-info" href="#">John Doe</a></strong> Uploaded a photo <strong>"DSC000586.jpg"</strong></p>
+                                    </div>
+                                </div>
+
+                                <div class="time-item">
+                                    <div class="item-info">
+                                        <small class="text-muted">30 minutes ago</small>
+                                        <p><a class="text-info" href="">Lorem</a> commented your post.</p>
+                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
+                                    </div>
+                                </div>
+
+                                <div class="time-item">
+                                    <div class="item-info">
+                                        <small class="text-muted">59 minutes ago</small>
+                                        <p><a class="text-info" href="">Jessi</a> attended a meeting with<a class="text-success" href="#">John Doe</a>.</p>
+                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
+                                    </div>
+                                </div>
+
+                                <div class="time-item">
+                                    <div class="item-info">
+                                        <small class="text-muted">1 hour ago</small>
+                                        <p><strong><a class="text-info" href="#">John Doe</a></strong>Uploaded 2 new photos</p>
+                                    </div>
+                                </div>
+
+                                <div class="time-item">
+                                    <div class="item-info">
+                                        <small class="text-muted">3 hours ago</small>
+                                        <p><a class="text-info" href="">Lorem</a> commented your post.</p>
+                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
+                                    </div>
+                                </div>
+
+                                <div class="time-item">
+                                    <div class="item-info">
+                                        <small class="text-muted">5 hours ago</small>
+                                        <p><a class="text-info" href="">Jessi</a> attended a meeting with<a class="text-success" href="#">John Doe</a>.</p>
+                                        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- end nicescroll -->
+            <div class="nicescroll-rails" id="ascrail2000" style="left: 232px; top: 0px; width: 8px; height: 706px; display: block; position: absolute; z-index: 9; cursor: default; opacity: 0;"><div style="border-radius: 5px; border: 1px solid rgb(255, 255, 255); border-image: none; top: 0px; width: 6px; height: 761px; position: relative; float: right; background-clip: padding-box; background-color: rgb(152, 166, 173);"></div></div><div class="nicescroll-rails" id="ascrail2000-hr" style="left: 0px; top: 698px; width: 232px; height: 8px; display: none; position: absolute; z-index: 9; cursor: default; opacity: 0;"><div style="border-radius: 5px; border: 1px solid rgb(255, 255, 255); border-image: none; top: 0px; width: 240px; height: 6px; position: relative; background-clip: padding-box; background-color: rgb(152, 166, 173);"></div></div></div>
+            <!-- /Right-bar -->
+
+            <footer class="footer text-right">
+                2017 © THE.SSR
+            </footer>
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/tether.min.js"></script><!-- Tether for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+
+        <!--Morris Chart-->
+		<script src="assets/plugins/morris/morris.min.js"></script>
+		<script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <!-- Counter Up  -->
+        <script src="assets/plugins/waypoints/lib/jquery.waypoints.js"></script>
+        <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <!-- Page specific js -->
+        <script src="assets/pages/jquery.dashboard.js"></script>
+
+    
+</body></html>
